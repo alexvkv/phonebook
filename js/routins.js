@@ -40,7 +40,7 @@ jQuery(function($) {
 			dataType: "json",	
 			data: "town=" + town + "&ajax=1",	
 			error: function ( jqXHR, textStatus, errorThrown) {	
-				alert( "При выполнении запроса произошла ошибка" );	
+				//alert( "При выполнении запроса address/street произошла ошибка" );	
 				console.log(errorThrown);
 				console.log(jqXHR.responseText);
 				modal.modal('hide');
@@ -102,10 +102,9 @@ jQuery(function($) {
 		dataType: "json",	
 		data: "ajax=1",	
 		error: function ( jqXHR, textStatus, errorThrown) {	
-			alert( "При выполнении запроса произошла ошибка" );	
+			//alert( "При выполнении запроса address/town произошла ошибка " );	
 			console.log(errorThrown);
 			console.log(jqXHR.responseText);
-			modal.modal('hide');
 		},
 		success: function ( data ) { 
 			//console.log(data[0]);
@@ -211,7 +210,7 @@ jQuery(function($) {
 				dataType: "json",	
 				data: "id=" + idphone + "&ajax=1",	
 				error: function ( jqXHR, textStatus, errorThrown) {	
-					alert( "При выполнении запроса произошла ошибка" );	
+					//alert( "При выполнении запроса index произошла ошибка" );	
 					console.log(errorThrown);
 					console.log(jqXHR.responseText);
 					modal.modal('hide');
@@ -334,7 +333,7 @@ jQuery(function($) {
 			dataType: "json",	
 			data: str+"&ajax=1",	
 			error: function ( jqXHR, textStatus, errorThrown) {	
-				alert( "При выполнении запроса произошла ошибка" );	
+				//alert( "При выполнении запроса index/insupd произошла ошибка" );	
 				console.log(errorThrown);
 				console.log(jqXHR.responseText);
 				modal.modal('hide');
@@ -362,7 +361,7 @@ jQuery(function($) {
 							case "fio" : $( this ).text(data.f+ " "+ data.i + " "+ data.o); break;
 							case "birthday" : $( this ).text(data.birthday); break;
 							case "phone" : $( this ).text(data.phone); break;
-							case "address" : $( this ).text( "г." + 
+							case "address" : $( this ).text( "г. " + 
 									  $("#inputTown option:selected").text() + ", " + 
 									  $("#inputStreet option:selected").text() + 
 									  " (" + $("#inputTown option:selected").closest('optgroup').attr('label') + ")");
@@ -400,7 +399,7 @@ jQuery(function($) {
 					dataType: "json",	
 					data: "id=" + idphone + "&ajax=1",	
 					error: function ( jqXHR, textStatus, errorThrown) {	
-						alert( "При выполнении запроса произошла ошибка" );	
+						//alert( "При выполнении запроса index/del произошла ошибка" );	
 						console.log(errorThrown);
 						console.log(jqXHR.responseText);
 					},

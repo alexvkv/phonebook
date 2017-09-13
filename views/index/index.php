@@ -15,13 +15,13 @@
 					  	<label for="inputFamilya" class="col-sm-4 control-label">Фамилия</label>
 					    <div class="col-sm-8">
 					      <input type="hidden" class="form-control" id="inputId" name="id">	
-					      <input type="text" class="form-control" id="inputFamilya" name="f" required pattern="[А-ЯЁ]{1}[А-Яа-яЁё\s\-]{1,}" placeholder="Фамилия">
+					      <input type="text" class="form-control" id="inputFamilya" name="f" required pattern="[А-Яа-яЁё]{1}[А-Яа-яЁё\s\-]{1,}" placeholder="Фамилия">
 					    </div>
 					  </div>
 					  <div class="form-group has-feedback">  
 					    <label for="inputImya" class="col-sm-4 control-label">Имя</label>
 					    <div class="col-sm-8">
-					      <input type="text" class="form-control" id="inputImya" name="i" required pattern="[А-ЯЁ]{1}[А-Яа-яЁё\s\-]{1,}" placeholder="Имя">
+					      <input type="text" class="form-control" id="inputImya" name="i" required pattern="[А-Яа-яЁё]{1}[А-Яа-яЁё\s\-]{1,}" placeholder="Имя">
 					    </div>
 					   </div>
 					  <div class="form-group has-feedback">
