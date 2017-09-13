@@ -33,7 +33,7 @@
 					  <div class="form-group has-feedback">
 					    <label for="inputBirth" class="col-sm-4 control-label">Дата рождения</label>
 					    <div class="col-sm-8">
-					      <input type="date" class="form-control" id="inputBirth" name="birthday" min="1900-01-01" max="2010-01-01" required placeholder="Дата рождения">
+					      <input type="date" class="form-control" id="inputBirth" name="birthday" min="1900-01-01" max="2010-01-01" required>
 					    </div>
 					  </div>
 					  <div class="form-group has-feedback">
@@ -48,12 +48,13 @@
 					    <label for="inputStreet" class="col-sm-4 control-label">Адрес</label>
 					    <div class="col-sm-8">
 					      <select class="selectpicker" id="inputTown" required data-live-search="true" title="Город">
+					      	<option value="Владивосток">Владивосток</option>
 					      	<optgroup label="Приморский край">
     						<option>Владивосток</option>
     						</optgroup>
     					  </select>
   						  <select class="selectpicker" id="inputStreet" required data-live-search="true" title="Улица" name="address_id">
-    						<option>Нейбута</option>
+    						<option value="1">Нейбута</option>
     					  </select>
 					    </div>
 					  </div>

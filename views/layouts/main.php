@@ -20,13 +20,6 @@
 	 <![endif]-->  
 	
 	
-	<!--
-	<script src="/js/jquery.min.js"></script>
-    
-    <script src="/js/bootstrap.js"></script>
-    
-    <script src="<?=SITE_URL?>js/routins.js"></script>-->  
-	
 	<? if (!isset($pagetitle)) $pagetitle = "Задание - телефонный справочник"; ?>
 	<title><?=$pagetitle?></title>
 </head>
@@ -90,6 +83,11 @@
     <script src="/js/bootstrap.js"></script>
     <script src="/js/bootstrap-select.js"></script>
     
-    <script src="<?=SITE_URL?>js/routins.js"></script>
+    <?php 
+    	if (isset($js)) 
+    		foreach ($js as $jsi) 
+    			echo("<script src=\"$jsi\"></script>\n");
+    ?>
+    
 </body>
 </html>

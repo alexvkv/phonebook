@@ -7,6 +7,8 @@ Class Controller_Index Extends Controller_Base {
 	
 	// экшен 
 	function index() {
+		//доп скрипт для подключения в layaut
+		$this->template->vars('js', ["js/routins.js"]);
 		
 		$id = 0;
 		

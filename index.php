@@ -27,11 +27,6 @@ $router = new Router();
 // задаем путь до папки контроллеров.
 $router->setPath (SITE_PATH . 'controllers');
 
-//прочтем пользователя если есть
-$user = array();
-if (isset($_SESSION["user"]) && is_array($_SESSION["user"])) {
-	$user = $_SESSION["user"];
-}
 
 
 // запускаем маршрутизатор
