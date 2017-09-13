@@ -1,5 +1,5 @@
 # phonebook
 Тестовое задание "Телефонный справочник"
 
-1. phonebook.sql - база данных проекта test-phonebook
+1. phonebook.sql.zip - база данных проекта test-phonebook
 2. config.php - при развертывнии десь указать хост, имя и парль к БД. SITE_URL должен содержать URL к корню сайта. 
