@@ -36,7 +36,7 @@ jQuery(function($) {
 		
 		$.ajax({
 			type: "POST",	
-			url: "address/street",	
+			url: "/address/street",	
 			dataType: "json",	
 			data: "town=" + town + "&ajax=1",	
 			error: function ( jqXHR, textStatus, errorThrown) {	
@@ -98,7 +98,7 @@ jQuery(function($) {
 	//пока юзер разглядывает страничку, подгрузим в фоне список городов для select
 	$.ajax({
 		type: "POST",	
-		url: "address/town",	
+		url: "/address/town",	
 		dataType: "json",	
 		data: "ajax=1",	
 		error: function ( jqXHR, textStatus, errorThrown) {	
@@ -206,7 +206,7 @@ jQuery(function($) {
 			//получим свежие данные по записи которую собрались редактировать
 			$.ajax({
 				type: "POST",	
-				url: "index",	
+				url: "/index",	
 				dataType: "json",	
 				data: "id=" + idphone + "&ajax=1",	
 				error: function ( jqXHR, textStatus, errorThrown) {	
@@ -329,7 +329,7 @@ jQuery(function($) {
 		
 		$.ajax({
 			type: "POST",	
-			url: "index/insupd",	
+			url: "/index/insupd",	
 			dataType: "json",	
 			data: str+"&ajax=1",	
 			error: function ( jqXHR, textStatus, errorThrown) {	
@@ -395,7 +395,7 @@ jQuery(function($) {
 			 
 			 $.ajax({
 					type: "POST",	
-					url: "index/del",	
+					url: "/index/del",	
 					dataType: "json",	
 					data: "id=" + idphone + "&ajax=1",	
 					error: function ( jqXHR, textStatus, errorThrown) {	

@@ -82,10 +82,10 @@
 				
 				<thead>
 					<tr>
-					<th>ФИО &nbsp;<a href="?sort=fio"><span class="glyphicon glyphicon-sort-by-attributes" ></span></a></th>
+					<th>ФИО &nbsp;<a href="/?sort=fio"><span class="glyphicon glyphicon-sort-by-attributes" ></span></a></th>
 					<th>Дата рождения</th>
-					<th>Адрес &nbsp;<a href="?sort=addres"><span class="glyphicon glyphicon-sort-by-attributes" ></span></a></th>
-					<th>Телефон &nbsp;<a href="?sort=phone"><span class="glyphicon glyphicon-sort-by-attributes" ></span></a></th>
+					<th>Адрес &nbsp;<a href="/?sort=addres"><span class="glyphicon glyphicon-sort-by-attributes" ></span></a></th>
+					<th>Телефон &nbsp;<a href="/?sort=phone"><span class="glyphicon glyphicon-sort-by-attributes" ></span></a></th>
 					<th>&nbsp;</th>
 					</tr>
 				</thead>
