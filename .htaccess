@@ -1,0 +1,7 @@
+php_flag register_globals off
+php_value upload_max_filesize 1M
+php_value post_max_size 15M
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?route=$1 [L,QSA]

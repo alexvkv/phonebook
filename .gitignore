@@ -1,0 +1,10 @@
+# OS or Editor folders
+.settings
+.project
+.buildpath
+
+# Folders to ignore
+
+# Dist zip
+phonebook.zip
+
